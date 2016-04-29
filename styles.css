@@ -1,0 +1,16 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.big-title {
+    font-size: 128px;
+    margin: 200px 0 0 0;
+    text-align: center;
+    -webkit-filter: blur(5px);
+}
+
+.coming-soon {
+    font-size: 32px;
+    text-align: center;
+    -webkit-filter: blur(2px);
+}
