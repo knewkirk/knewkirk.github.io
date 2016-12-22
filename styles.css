@@ -50,8 +50,11 @@ p {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  margin: 60px 15%;
-  padding: 90px 130px; }
+  margin: 60px auto;
+  padding: 90px 10%;
+  max-width: 900px;
+  min-width: 700px;
+  width: 70%; }
   .bio .bio-main {
     margin-top: 30px; }
 
