@@ -1,4 +1,5 @@
 $primary-dark: #1e3335;
+$primary-grey: #a7bbbb;
 $primary-light: #f5f6f8;
 
 * {
@@ -40,22 +41,62 @@ p {
     word-spacing: 0.1em;
 }
 
-.title-background {
+.main-background {
     background-image: url("https://farm1.staticflickr.com/429/31517055981_e4a45f25ac_h.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-.title-name {
+.title {
     background: $primary-light;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin: 70px auto 0;
     opacity: 0.8;
-    padding: 15px 0;
+    padding: 20px 0;
     position: absolute;
-    text-align: center;
     width: 100%;
+
+    h1 {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .links {
+        display: block;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            margin: 0 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+
+        .icon-linkedin g path,
+        .icon-github path,
+        .icon-flikr path:first-child,
+        .icon-instagram g {
+            fill: $primary-dark;
+        }
+
+        .icon-mail g {
+            stroke: $primary-dark;
+        }
+
+        .icon-flikr path:nth-child(2) {
+            fill: $primary-grey;
+        }
+    }
 }
 
 .bio {

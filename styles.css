@@ -30,21 +30,45 @@ p {
   text-rendering: optimizeLegibility;
   word-spacing: 0.1em; }
 
-.title-background {
+.main-background {
   background-image: url("https://farm1.staticflickr.com/429/31517055981_e4a45f25ac_h.jpg");
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.title-name {
+.title {
   background: #f5f6f8;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin: 70px auto 0;
   opacity: 0.8;
-  padding: 15px 0;
+  padding: 20px 0;
   position: absolute;
-  text-align: center;
   width: 100%; }
+  .title h1 {
+    margin: 0 0 10px 0;
+    text-align: center; }
+  .title .links {
+    display: block;
+    text-align: center; }
+    .title .links a {
+      text-decoration: none;
+      margin: 0 10px;
+      opacity: 0.8;
+      transition: opacity 0.3s; }
+      .title .links a:hover {
+        opacity: 1; }
+    .title .links svg {
+      height: 24px;
+      width: 24px; }
+    .title .links .icon-linkedin g path,
+    .title .links .icon-github path,
+    .title .links .icon-flikr path:first-child,
+    .title .links .icon-instagram g {
+      fill: #1e3335; }
+    .title .links .icon-mail g {
+      stroke: #1e3335; }
+    .title .links .icon-flikr path:nth-child(2) {
+      fill: #a7bbbb; }
 
 .bio {
   background-color: #fff;
