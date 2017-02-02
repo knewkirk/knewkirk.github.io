@@ -1,4 +1,5 @@
 $primary-dark: #1e3335;
+$primary-hover: #11747d;
 $primary-grey: #a7bbbb;
 $primary-light: #f5f6f8;
 
@@ -35,6 +36,10 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .main-background {
@@ -95,19 +100,56 @@ ul {
     }
 }
 
-.content-section {
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+
+    button {
+        border: none;
+        background: none;
+        color: $primary-grey;
+        cursor: pointer;
+        font-size: 16px;
+        outline: none;
+        transition: color 0.3s, font-size 0.3s;
+
+        &:hover {
+            color: $primary-hover;
+        }
+
+        &.is-selected {
+            color: $primary-dark;
+            font-size: 18px;
+        }
+    }
+}
+
+.content {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-    margin: 60px auto;
+    height: 517px;
+    margin: 20px auto 40px;
     max-width: 900px;
     min-width: 700px;
-    padding: 90px 10% 120px;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.3s;
     width: 70%;
+}
+
+.content-section {
+    opacity: 0;
+    padding: 90px 10% 100px;
+    transition: opacity 0.3s;
 
     h2 {
         margin: 0 0 50px;
         text-align: center;
+    }
+
+    &.is-showing {
+        opacity: 1;
     }
 
     &.about {
@@ -120,6 +162,7 @@ ul {
     }
 
     &.resume {
+        text-align: left;
 
         ul {
             margin-bottom: 10px;

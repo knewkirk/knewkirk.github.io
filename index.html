@@ -73,124 +73,131 @@
         </div>
     </div>
 
-    <div class="content-section about">
-        <h2>About</h2>
-        <span class="drop-cap">Hi there!</span>I’m Kyle, and I’m currently taking a break from the industry.
-        I was previously a software engineer at Box for the past three years,
-        where I enjoyed working on the first complete redesign and rewrite of the core web application product,
-        dramatically improving the user experience for millions of users around the world.
-        I was part of the team when we decided to undertake the project in early 2014,
-        helped build a brand new foundation throughout the web stack for the growing team,
-        built many user-facing features and pages, and polished it up for its GA in October.
-        <br><br>
-        After its completion, I decided to take a sabbatical to spend some quality time
-        with my family over the holidays, do some traveling, and learn some new skills.
-        I’ve been visiting friends, doing quite a bit of snowboarding, and planning a
-        trip to Japan in March. Most recently, I’ve been taking online courses on piano,
-        music theory, Japanese, and psychology.
-        <br><br>
-        I’m now looking to continue my career in the tech industry,
-        hoping to work with a team focused on building a strong product for their users.
+    <div class="button-group">
+        <button class="is-selected" data-content-name="about">About</button>
+        <button data-content-name="resume">Résumé</button>
     </div>
 
-    <div class="content-section resume">
-        <h2>Résumé</h2>
+    <div class="content">
 
-        <div class="resume-section">
-            <h3>Experience</h3>
-            <h4><b>Box</b> · Redwood City, CA</h4>
-            <h5><b>Senior Software Engineer</b>  ·  Full Stack, WebApp EndUser Team<h5>
-            <h5>September 2015 - October 2016</h5>
-            <ul><li>
-                Began, lead, and launched a rebuild and redesign of the core, multi-million user web application
-            </li><li>
-                Built full-stack features like contact selectors, search, and settings using PHP, JS, HTML, and CSS
-            </li><li>
-                Worked with product, design, and backend teams to iterate on critical features and user flows
-            </li><li>
-                Instrumented analytics logging, conducted A/B tests and other user behavior analysis
-            </li><li>
-                Contributed reusable and extensible components to Box React UI project
-            </li></ul>
-
-            <h5><b>Software Engineer</b> · Full Stack, WebApp Performance Team</h5>
-            <h5>September 2013 - September 2015</h5>
-            <ul><li>
-                Completed major refactor of widely used feature configuration system in PHP
-            </li><li>
-                Built major framework-level front end components in JS
-            </li><li>
-                Completed 12 week design workshop, selected for fellowship, created mockups with Sketch
-            </li><li>
-                Mentored two project management interns, guided implementation of a Python app
-            </li></ul>
-
-            <h4><b>VMware</b> · Los Altos, CA</h4>
-            <h5><b>Software Engineer Intern</b> · Project Octopus</h5>
-            <h5>June - November 2012</h5>
-            <ul><li>
-                Learned JS quickly and began contributing immediately without prior experience
-            </li><li>
-                Adapted a new web application for use with touch gestures on mobile web
-            </li><li>
-                Selected by management to continue working while completing education at UCLA
-            </li></ul>
-
-            <h4>San Jose, CA</h4>
-            <h5>Swim Coach · Diving Coach · Lifeguard · Lessons Instructor</h5>
-            <h5>Summer 2007 - 2011</h5>
+        <div class="content-section about is-showing" data-content-name="about">
+            <span class="drop-cap">Hi there!</span>I’m Kyle, and I’m currently taking a break from the industry.
+            I was previously a software engineer at Box for the past three years,
+            where I enjoyed working on the first complete redesign and rewrite of the core web application product,
+            dramatically improving the user experience for millions of users around the world.
+            I was part of the team when we decided to undertake the project in early 2014,
+            helped build a brand new foundation throughout the web stack for the growing team,
+            built many user-facing features and pages, and polished it up for its GA in October.
+            <br><br>
+            After its completion, I decided to take a sabbatical to spend some quality time
+            with my family over the holidays, do some traveling, and learn some new skills.
+            I’ve been visiting friends and family, doing quite a bit of snowboarding, and planning a
+            trip to Japan in March. Most recently, I’ve been taking online courses on piano,
+            music theory, Japanese, and psychology.
+            <br><br>
+            I’m now looking to continue my career in the tech industry,
+            hoping to work with a team focused on building a strong product for their users.
         </div>
 
-        <div class="resume-section">
-            <h3>Skills</h3>
-            <ul><li>
-                <b>Primary Languages:</b>
-                JS (ES6), CSS3, HTML5, PHP
-            </li><li>
-                <b>Additional:</b>
-                React, Python, Bash, MySQL, Java, C
-            </li><li>
-                <b>Frameworks:</b>
-                Sass, Brainy, T3JS, jQuery, Resin.js, PHPUnit, Mocha, Karma, Webpack, Pux
-            </li><li>
-                <b>Tools:</b>
-                Sketch, Splunk, Hive, Git, Cloud Foundry
-            </li></ul>
-        </div>
+        <div class="content-section resume hidden" data-content-name="resume">
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <h4><b>Box</b> · Redwood City, CA</h4>
+                <h5><b>Senior Software Engineer</b>  ·  Full Stack, WebApp EndUser Team<h5>
+                <h5>September 2015 - October 2016</h5>
+                <ul><li>
+                    Began, lead, and launched a rebuild and redesign of the core, multi-million user web application
+                </li><li>
+                    Built full-stack features like contact selectors, search, and settings using PHP, JS, HTML, and CSS
+                </li><li>
+                    Worked with product, design, and backend teams to iterate on critical features and user flows
+                </li><li>
+                    Instrumented analytics logging, conducted A/B tests and other user behavior analysis
+                </li><li>
+                    Contributed reusable and extensible components to Box React UI project
+                </li></ul>
 
-        <div class="resume-section">
-            <h3>Education</h3>
-            <h4>University of California, Los Angeles</h4>
-            <ul><li>
-                B.S., Computer Science and Engineering · Class of Spring 2013
-            </li><li>
-                Member of the Pi Kappa Alpha Fraternity
-            </li><li>
-                Manager of the NCAA Women’s Diving Team
-            </li></ul>
+                <h5><b>Software Engineer</b> · Full Stack, WebApp Performance Team</h5>
+                <h5>September 2013 - September 2015</h5>
+                <ul><li>
+                    Completed major refactor of widely used feature configuration system in PHP
+                </li><li>
+                    Built major framework-level front end components in JS
+                </li><li>
+                    Completed 12 week design workshop, selected for fellowship, created mockups with Sketch
+                </li><li>
+                    Mentored two project management interns, guided implementation of a Python app
+                </li></ul>
 
-            <h4>Bellarmine College Preparatory · San Jose, CA</h4>
-            <ul><li>
-                Class of 2009
-            </li></ul>
-        </div>
+                <h4><b>VMware</b> · Los Altos, CA</h4>
+                <h5><b>Software Engineer Intern</b> · Project Octopus</h5>
+                <h5>June - November 2012</h5>
+                <ul><li>
+                    Learned JS quickly and began contributing immediately without prior experience
+                </li><li>
+                    Adapted a new web application for use with touch gestures on mobile web
+                </li><li>
+                    Selected by management to continue working while completing education at UCLA
+                </li></ul>
 
-        <div class="resume-section">
-            <h3>Interests</h3>
-            <ul><li>
-            <b>Piano</b> · Completed a 30 hour piano course on Udemy
-            </li><li>
-            <b>Music</b> · Maintained a 10k song library over 11 years, completed a music theory Udemy course
-            </li><li>
-            <b>Snowboarding</b> · For 16 years, going to Park City, Utah in a couple weeks
-            </li><li>
-            <b>Photography</b> · Canon 5D MkI, 24mm + 50mm lenses
-            </li><li>
-            <b>Running</b> · Completed the 2015 SF marathon
-            </li></ul>
+                <h4>San Jose, CA</h4>
+                <h5>Swim Coach · Diving Coach · Lifeguard · Lessons Instructor</h5>
+                <h5>Summer 2007 - 2011</h5>
+            </div>
+
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul><li>
+                    <b>Primary Languages:</b>
+                    JS (ES6), CSS3, HTML5, PHP
+                </li><li>
+                    <b>Additional:</b>
+                    React, Python, Bash, MySQL, Java, C
+                </li><li>
+                    <b>Frameworks:</b>
+                    Sass, Brainy, T3JS, jQuery, Resin.js, PHPUnit, Mocha, Karma, Webpack, Pux
+                </li><li>
+                    <b>Tools:</b>
+                    Sketch, Splunk, Hive, Git, Cloud Foundry
+                </li></ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Education</h3>
+                <h4>University of California, Los Angeles</h4>
+                <ul><li>
+                    B.S., Computer Science and Engineering · Class of Spring 2013
+                </li><li>
+                    Member of the Pi Kappa Alpha Fraternity
+                </li><li>
+                    Manager of the NCAA Women’s Diving Team
+                </li></ul>
+
+                <h4>Bellarmine College Preparatory · San Jose, CA</h4>
+                <ul><li>
+                    Class of 2009
+                </li></ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Interests</h3>
+                <ul><li>
+                <b>Piano</b> · Completed a 30 hour piano course on Udemy
+                </li><li>
+                <b>Music</b> · Maintained a 10k song library over 11 years, completed a music theory Udemy course
+                </li><li>
+                <b>Snowboarding</b> · For 16 years, going to Park City, Utah in a couple weeks
+                </li><li>
+                <b>Photography</b> · Canon 5D MkI, 24mm + 50mm lenses
+                </li><li>
+                <b>Running</b> · Completed the 2015 SF marathon
+                </li></ul>
+            </div>
         </div>
     </div>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>

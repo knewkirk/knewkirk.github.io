@@ -37,6 +37,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+.hidden {
+  display: none; }
+
 .main-background {
   background-image: url("https://farm1.staticflickr.com/429/31517055981_e4a45f25ac_h.jpg");
   background-size: cover;
@@ -77,31 +80,60 @@ ul {
     .title .links .icon-flikr path:nth-child(2) {
       fill: #a7bbbb; }
 
-.content-section {
+.button-group {
+  text-align: center;
+  margin-top: 20px; }
+  .button-group button {
+    border: none;
+    background: none;
+    color: #a7bbbb;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    transition: color 0.3s, font-size 0.3s; }
+    .button-group button:hover {
+      color: #11747d; }
+    .button-group button.is-selected {
+      color: #1e3335;
+      font-size: 18px; }
+
+.content {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  margin: 60px auto;
+  height: 517px;
+  margin: 20px auto 40px;
   max-width: 900px;
   min-width: 700px;
-  padding: 90px 10% 120px;
+  overflow: hidden;
+  text-align: center;
+  transition: height 0.3s;
   width: 70%; }
+
+.content-section {
+  opacity: 0;
+  padding: 90px 10% 100px;
+  transition: opacity 0.3s; }
   .content-section h2 {
     margin: 0 0 50px;
     text-align: center; }
+  .content-section.is-showing {
+    opacity: 1; }
   .content-section.about {
     text-align: justify; }
     .content-section.about .drop-cap {
       font-size: 18px;
       margin: 0 10px 0 0; }
-  .content-section.resume ul {
-    margin-bottom: 10px; }
-  .content-section.resume li:before {
-    content: '-';
-    margin: 0 5px 0 0; }
-  .content-section.resume .resume-section {
-    margin-bottom: 20px; }
-    .content-section.resume .resume-section:last-child {
-      margin-bottom: 0; }
+  .content-section.resume {
+    text-align: left; }
+    .content-section.resume ul {
+      margin-bottom: 10px; }
+    .content-section.resume li:before {
+      content: '-';
+      margin: 0 5px 0 0; }
+    .content-section.resume .resume-section {
+      margin-bottom: 20px; }
+      .content-section.resume .resume-section:last-child {
+        margin-bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */
