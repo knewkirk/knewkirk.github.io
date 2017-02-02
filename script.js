@@ -1,6 +1,9 @@
+var bgImgEl = document.querySelector('.bg-img');
 var buttonGroupEl = document.querySelector('.button-group');
 var contentEl = document.querySelector('.content');
 var contentSectionEls = document.querySelectorAll('.content-section');
+var imgLoadingHelperEl = document.querySelector('.bg-img-loading-helper');
+var loadingIndicatorEl = document.querySelector('.loading-indicator');
 
 buttonGroupEl.addEventListener('click', function(e) {
     var chosenContentName = e.target.getAttribute('data-content-name');
@@ -28,4 +31,10 @@ buttonGroupEl.addEventListener('click', function(e) {
     target.classList.add('is-selected');
 
     contentEl.style.height = chosenContentSectionEl.getBoundingClientRect().height;
+});
+
+
+imgLoadingHelperEl.addEventListener('load', function(e) {
+    loadingIndicatorEl.classList.add('hidden');
+    bgImgEl.classList.add('is-showing');
 });

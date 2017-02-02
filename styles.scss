@@ -38,16 +38,74 @@ ul {
     padding: 0;
 }
 
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
 .hidden {
     display: none;
 }
 
-.main-background {
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.loading-indicator {
+    i {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 50px;
+        border: 3px solid $primary-dark;
+        border-radius: 4px;
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.71,.25,.31,.86);
+    }
+
+    i:first-child {
+        opacity: 0.4;
+    }
+    i:nth-child(2) {
+        animation-delay: 0.05s;
+        opacity: 0.1;
+    }
+    i:last-child {
+        animation-delay: 0.1s;
+        opacity: 0.05;
+    }
+}
+
+.bg-img {
     background-image: url("https://farm1.staticflickr.com/429/31517055981_e4a45f25ac_h.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+
+    &.is-showing {
+        opacity: 1;
+    }
 }
+
+.bg-img-loading-helper {
+    display: none;
+}
+
 
 .title {
     background: $primary-light;
@@ -57,6 +115,7 @@ ul {
     padding: 20px 0;
     position: absolute;
     width: 100%;
+    z-index: 1;
 
     h1 {
         margin: 0 0 10px 0;
@@ -101,8 +160,9 @@ ul {
 }
 
 .button-group {
-    text-align: center;
+    height: 20px;
     margin-top: 20px;
+    text-align: center;
 
     button {
         border: none;
@@ -119,7 +179,7 @@ ul {
 
         &.is-selected {
             color: $primary-dark;
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 }
@@ -133,6 +193,7 @@ ul {
     max-width: 900px;
     min-width: 700px;
     overflow: hidden;
+    position: relative;
     text-align: center;
     transition: height 0.3s;
     width: 70%;
@@ -140,7 +201,8 @@ ul {
 
 .content-section {
     opacity: 0;
-    padding: 90px 10% 100px;
+    padding: 90px 15% 100px;
+    position: absolute;
     transition: opacity 0.3s;
 
     h2 {
@@ -156,7 +218,7 @@ ul {
         text-align: justify;
 
         .drop-cap {
-            font-size: 18px;
+            font-size: 20px;
             margin: 0 10px 0 0;
         }
     }
