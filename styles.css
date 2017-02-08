@@ -104,7 +104,7 @@ button {
     text-align: center; }
     .title .links a {
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 8px;
       opacity: 0.8;
       transition: opacity 0.3s; }
       .title .links a:hover {
@@ -114,6 +114,7 @@ button {
       width: 24px; }
     .title .links .icon-linkedin g path,
     .title .links .icon-github path,
+    .title .links .icon-codepen path,
     .title .links .icon-flikr path:first-child,
     .title .links .icon-instagram g {
       fill: #1e3335; }

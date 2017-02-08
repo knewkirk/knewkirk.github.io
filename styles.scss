@@ -128,7 +128,7 @@ button {
 
         a {
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 8px;
             opacity: 0.8;
             transition: opacity 0.3s;
 
@@ -144,6 +144,7 @@ button {
 
         .icon-linkedin g path,
         .icon-github path,
+        .icon-codepen path,
         .icon-flikr path:first-child,
         .icon-instagram g {
             fill: $primary-dark;
